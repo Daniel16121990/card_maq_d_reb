@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            width: 100%;
+            position: fixed;
+            top: 0;
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            background-color:  rgb(92, 117, 197);
+            opacity: 80%;
+            
+        }
+        ul > li{
+            background-color: brown;
+        }
+        thead > tr{
+            background-color: rgb(247, 112, 72);
+        }
+        tr > td {
+            background-color: rgb(27, 145, 125);
+        }
+        table {
+         border-collapse: collapse; /* Fusiona los bordes de las celdas */
+        }
+        .menu > li:hover{
+            color: aliceblue;
+        } 
+        .redes li:nth-child(2){
+            color: blue;
+        }
+        h1::first-letter {
+            color: brown;
+        }
+        h1::before{
+            content: "😎";
+        }
+        h1::after{
+            content: "😜";
+        }
+        .menu{
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;  /*quita los puntos de los lista */
+            
+        }
+        .menu li{
+            padding-right: 20px;
+        }
+        .tabla{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .tabla table{
+            width: 90%;
+        }
+        .discografia img{
+            width: 300px;
+        }
+        .fotos img{
+            width: 300px;
+        }
+        main{
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Maquina de Rebeldía</h1>
+        <nav>
+            <ul class="menu">
+                <li>Discografía</li>
+                <li>Agenda</li>
+                <li>Fotos</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="discografia">
+            <h2>Discografía</h2>
+            <div>
+                <img src="./fotos/avion.jpg" alt="disco1">
+                <img src="./fotos/avion.jpg" alt="disco2">
+                <img src="./fotos/avion.jpg" alt="disco3">
+                <img src="./fotos/avion.jpg" alt="disco4">
+                <img src="./fotos/avion.jpg" alt="disco5">
+                <img src="./fotos/avion.jpg" alt="disco6">
+            </div>
+        </section>
+        <section class="tabla">
+            <h2>Agenda</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha del Evento</th>
+                        <th>Lugar</th>
+                        <th>Flayer del Evento</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>10 de Febrero</td>
+                        <td>Pub Zippo</td>
+                        <td><img src="flayer_evento1.jpg" alt="Flyer del evento 1"></td>
+                    </tr>
+                    <tr>
+                        <td>22 de Mayo</td>
+                        <td>Festival de Punk, La Paz</td>
+                        <td><img src="flayer_evento2.jpg" alt="Flyer del evento 2"></td>
+                    </tr>
+                    <tr>
+                        <td>15 de Junio</td>
+                        <td>Teatro Raul salmon de la barra</td>
+                        <td><img src="flayer_evento3.jpg" alt="flayer del evento 3"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="fotos">
+            <h2>fotos</h2>
+            <div>
+                <img src="./fotos/avion.jpg" alt="grupo1">
+                <img src="./fotos/avion.jpg" alt="grupo2">
+                <img src="./fotos/avion.jpg" alt="grupo3">
+                <img src="./fotos/avion.jpg" alt="grupo4">
+                <img src="./fotos/avion.jpg" alt="grupo5">
+                <img src="./fotos/avion.jpg" alt="grupo6">
+            </div>
+        </section>
+        <section>
+            <h2>Contacto</h2>
+            <div>
+                <ul class="redes">
+                    <li>Whatsapp</li>
+                    <li>Facebook</li>
+                    <li>TikTok</li>
+                    <li>Instagram</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Derechos reservados</h3>
+    </footer>
+</body>
+</html>
